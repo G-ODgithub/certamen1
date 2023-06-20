@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="shortcut icon" href="img/progra.png" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <div>
+                <h1>Formulario para el personal</h1>
+            </div>
+        </header>
+
+        <section id="registro">
+            <div class="container">
+              <h2>Por favor responda las siguientes preguntas:</h2>
+              <form name="validar" id="validar" action="exito.html">
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                  <label for="apellidos">Apellidos:</label>
+                  <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label for="rut">RUT:</label>
+                    <input type="text" id="rut" name="rut" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Correo Electrónico:</label>
+                  <input type="email" id="correo" name="correo" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Teléfono Móvil:</label>
+                    <input type="number" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <fieldset>
+                        <legend>Selecciona 1 o más lenguajes de programación de su interés:</legend>
+                    
+                        <div>
+                          <input type="checkbox" id="python" name="python">
+                          <label for="python">Python</label>
+                        </div>
+                    
+                        <div>
+                          <input type="checkbox" id="java" name="java">
+                          <label for="java">Java</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="typescript" name="typescript">
+                            <label for="typescript">TypeScript</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="php" name="php">
+                            <label for="php">PHP</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="csharp" name="csharp">
+                            <label for="csharp">C#</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="cmasmas" name="cmasmas">
+                            <label for="cmasmas">C++</label>
+                        </div>
+
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <p>¿Cuál es su nivel de conocimiento en programación?</p>                    
+                    <div>
+                        <input type="range" id="conocimiento" name="conocimiento"
+                               min="1" max="10">
+                        <label for="conocimiento"></label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p>
+                        ¿Cuántos años de experiencia laboral tiene?<br>
+                    
+                        <input type="radio" name="exp" value="tiempocompleto"> 1<br>                    
+                        <input type="radio" name="exp" value="mediodia"> 2<br>                    
+                        <input type="radio" name="exp" value="sinempleo"> 3<br>
+                        <input type="radio" name="exp" value="sinempleo"> 4<br>
+                        <input type="radio" name="exp" value="sinempleo"> 5
+                    
+                      </p>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Escriba una breve descripción de usted:</label>
+                        <textarea id="descripcion" name="descripcion" rows="4" cols="50"></textarea>
+                </div>
+                
+                
+                <button type="submit">Enviar Datos</button>
+              </form>
+              <br>
+              <div style="text-align: center;">
+                <button href="reset.html">Limpiar Datos</button>
+              </div>
+              <br>
+            </div>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" ></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+        <script src="/js/app.js"></script>
+    </body>
+</html>
